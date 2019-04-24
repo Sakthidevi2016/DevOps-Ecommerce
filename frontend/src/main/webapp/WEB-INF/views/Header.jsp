@@ -23,7 +23,8 @@
 				<li><a href="aboutus">About Us</a></li>
 				<li><a href="contactus">Contact Us</a></li>
 				<li><a href="category">Manage Category</a></li>
-				<li><a href="supplier">Supplier</a></li>
+				<li><a href="supplier">Manage Supplier</a></li>
+				<li><a href="product">Manage Product</a></li>
 			</ul>
 </div>
 </nav>
