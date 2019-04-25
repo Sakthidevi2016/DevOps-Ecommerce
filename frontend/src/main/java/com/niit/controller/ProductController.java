@@ -1,16 +1,21 @@
 package com.niit.controller;
 
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.LinkedHashMap;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.niit.dao.CategoryDAO;
 import com.niit.dao.ProductDAO;
@@ -50,16 +55,30 @@ public class ProductController {
 	}
 	
 	@RequestMapping(value="/addProduct",method=RequestMethod.POST)
-	public String addProduct(@ModelAttribute("product")Product product,Model m) {
-		
-		/*
-		 * System.out.println("Product ID:"+product.getProductID());
-		 * System.out.println("Product Name:"+product.getProductName());
-		 * System.out.println("Price:"+product.getPrice());
-		 * System.out.println("Stock:"+product.getQuantity());
-		 */
-		
+	public String addProduct(@ModelAttribute("product")Product product,@RequestParam("productImage")MultipartFile fileDetail,Model m,BindingResult result) {
+				
 		productDAO.addProduct(product);
+		
+		String imagePath = "D:\\Sakthi\\DTProject\\WORKSPACE\\frontend\\src\\main\\webapp\\WEB-INF\\resources\\images";
+		imagePath=imagePath+String.valueOf(product.getProductID())+".jpg";
+		
+		File myfile = new File(imagePath);
+		
+		if(!fileDetail.isEmpty()) {
+			try {
+				byte[] fileBytes = fileDetail.getBytes();
+				FileOutputStream fos = new FileOutputStream(myfile);
+				BufferedOutputStream bs = new BufferedOutputStream(fos);
+				bs.write(fileBytes);
+				bs.close();
+			}
+			catch(Exception e) {
+				m.addAttribute("errorInfo","Exception Arised:"+e);
+			}
+		}
+		else {
+			m.addAttribute("errorInfo", "Error in uploading the image");
+		}
 		
 		Product product1 = new Product();
 		m.addAttribute("product", product1);

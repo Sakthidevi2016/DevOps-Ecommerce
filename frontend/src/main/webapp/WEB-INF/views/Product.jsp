@@ -1,7 +1,7 @@
 <%@include file="Header.jsp"%>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%-- <c:if test="${flag }"> --%>
-<form:form action="addProduct" modelAttribute="product" method="post"> 
+<form:form action="addProduct" modelAttribute="product" method="post" enctype="multipart/form-data"> 
 <table align ="center">
 	<tr>
 		<td colspan="2">Product Detail</td>
@@ -44,12 +44,10 @@
 		<td>Product Description</td>
 		<td><form:input path="productDesc"/></td>
 	</tr>
-	<%-- 
 	<tr>
 		<td>Product Image</td>
-		<td><form:input type="file" path="pimage"/></td>
+		<td><form:input type="file" path="productImage"/></td>
 	</tr>
-	 --%>
 	<tr>
 		<td colspan="2">
 			<center>
