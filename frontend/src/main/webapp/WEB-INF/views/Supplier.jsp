@@ -24,7 +24,7 @@
 </form>
 <table align="center" class="table">
 	<tr>
-		<td colspan = "3"><center>Supplier Detail</center></td>
+		<td colspan = "5"><center>Supplier Detail</center></td>
 	</tr>
 	</tr>
 	<tr>
@@ -40,8 +40,8 @@
 			<td>${supplier.supplierID }</td>
 			<td>${supplier.supplierName }</td>
 			<td>${supplier.supplierAddress }</td>
-			<td><a href="<c:url value="/editCategory/${category.categoryID}"/>">Edit</a></td>
-			<td><a href="<c:url value="/deleteCategory/${category.categoryID}" />">Delete</a></td>
+			<td><a href="<c:url value="/editSupplier/${supplier.supplierID}"/>">Edit</a></td>
+			<td><a href="<c:url value="/deleteSupplier/${supplier.supplierID}" />">Delete</a></td>
 		</tr>
 	</c:forEach>
 </table>

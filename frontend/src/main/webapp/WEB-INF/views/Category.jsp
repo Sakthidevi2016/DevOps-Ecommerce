@@ -24,7 +24,7 @@
 </form>
 <table align="center" class="table">
 	<tr>
-		<td colspan = "3"><center>Category Detail</center></td>
+		<td colspan = "5"><center>Category Detail</center></td>
 	</tr>
 	</tr>
 	<tr>
