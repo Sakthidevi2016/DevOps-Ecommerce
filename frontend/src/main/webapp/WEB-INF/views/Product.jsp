@@ -125,6 +125,7 @@
 	</tr>
 	</tr>
 	<tr>
+		<td>Product Image</td>
 		<td>Product ID</td>
 		<td>Product Name</td>
 		<td>Product Desc</td>
@@ -135,7 +136,7 @@
 	</tr>
 	<c:forEach items="${productList }" var = "product">
 		<tr>
-		
+			<td><img src="<c:url value="/resources/images/${product.productID }.jpg"/>" class="img-thumbnail" height="50" width="50"/></td>
 			<td>${product.productID }</td>
 			<td>${product.productName }</td>
 			<td>${product.productDesc }</td>

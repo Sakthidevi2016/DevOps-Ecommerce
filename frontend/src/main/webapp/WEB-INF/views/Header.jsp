@@ -25,6 +25,7 @@
 				<li><a href="category">Manage Category</a></li>
 				<li><a href="supplier">Manage Supplier</a></li>
 				<li><a href="product">Manage Product</a></li>
+				<li><a href="productCatalog">Product Catalog</a></li>
 			</ul>
 </div>
 </nav>

@@ -55,18 +55,18 @@ public class ProductController {
 	}
 	
 	@RequestMapping(value="/addProduct",method=RequestMethod.POST)
-	public String addProduct(@ModelAttribute("product")Product product,@RequestParam("productImage")MultipartFile fileDetail,Model m,BindingResult result) {
+	public String addProduct(@ModelAttribute("product")Product product,@RequestParam("productImage")MultipartFile productImage,Model m,BindingResult result) {
 				
 		productDAO.addProduct(product);
 		
-		String imagePath = "D:\\Sakthi\\DTProject\\WORKSPACE\\frontend\\src\\main\\webapp\\WEB-INF\\resources\\images";
+		String imagePath = "D:\\Sakthi\\DTProject\\WORKSPACE\\frontend\\src\\main\\webapp\\resources\\images\\";
 		imagePath=imagePath+String.valueOf(product.getProductID())+".jpg";
 		
 		File myfile = new File(imagePath);
 		
-		if(!fileDetail.isEmpty()) {
+		if(!productImage.isEmpty()) {
 			try {
-				byte[] fileBytes = fileDetail.getBytes();
+				byte[] fileBytes = productImage.getBytes();
 				FileOutputStream fos = new FileOutputStream(myfile);
 				BufferedOutputStream bs = new BufferedOutputStream(fos);
 				bs.write(fileBytes);
@@ -180,4 +180,22 @@ public class ProductController {
 		
 	}
 	
-}
+	@RequestMapping("/productCatalog")
+	public String displayAllProduct(Model m) {
+		
+		List<Product> listProduct = productDAO.listProduct();
+		m.addAttribute("productList", listProduct);
+		
+		return "ProductCatalog";
+	}
+	
+	@RequestMapping("/productDisplay/{productID}")
+	public String displaySingleProduct(@PathVariable("productID")int productID,Model m){
+		
+		Product product = (Product)productDAO.getProduct(productID);
+		m.addAttribute("productInfo", product);
+		m.addAttribute("categoryName", categoryDAO.getCategory(product.getCategoryID()).getCategoryName());
+		return "ProductDisplay";
+	}
+	}
+
