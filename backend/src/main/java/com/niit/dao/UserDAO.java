@@ -10,7 +10,7 @@ public interface UserDAO {
 	public boolean registerUser(User user);
 	public boolean modifyUser(User user);
 	public User getUser(String userName);
-	public List<Supplier> listSupplier();
+	public List<User> listUser();
 	
 
 }

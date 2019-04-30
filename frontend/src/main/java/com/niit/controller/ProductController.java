@@ -183,6 +183,7 @@ public class ProductController {
 	@RequestMapping("/productCatalog")
 	public String displayAllProduct(Model m) {
 		
+		
 		List<Product> listProduct = productDAO.listProduct();
 		m.addAttribute("productList", listProduct);
 		
@@ -195,6 +196,7 @@ public class ProductController {
 		Product product = (Product)productDAO.getProduct(productID);
 		m.addAttribute("productInfo", product);
 		m.addAttribute("categoryName", categoryDAO.getCategory(product.getCategoryID()).getCategoryName());
+		m.addAttribute("supplierName", supplierDAO.getSupplier(product.getSupplierID()).getSupplierName());
 		return "ProductDisplay";
 	}
 	}

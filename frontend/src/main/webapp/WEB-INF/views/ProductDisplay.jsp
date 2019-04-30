@@ -20,8 +20,8 @@
 			<td>${categoryName}</td>
 		</tr>
 		<tr>
-			<td>Supplier ID</td>
-			<td>${productInfo.supplierID }</td>
+			<td>Supplier Name</td>
+			<td>${supplierName }</td>
 		</tr>
 		<tr>
 			<td>Price</td>
@@ -35,10 +35,10 @@
 			<td>Product Description</td>
 			<td>${productInfo.productDesc }</td>
 		</tr>
-		<form action = "Cart/${product.productID }" method="get">
+		<form action = "<c:url value="/addToCart/${productInfo.productID }"/>" method="get">
 			<tr>
 				<td>Quantity</td>
-				<td><input type="text" name="qty"/></td>
+				<td><input type="text" name="quantity"/></td>
 			</tr>
 			<tr>
 				<td><input type="submit" value="Add To Cart" class="btn btn-info"/></td>

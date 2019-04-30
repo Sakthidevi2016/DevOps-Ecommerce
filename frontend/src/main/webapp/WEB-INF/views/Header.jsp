@@ -14,19 +14,40 @@
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">Online Shopping</a>
+				<a class="navbar-brand" href="#">Online Food</a>
 			</div>
+			<c:if test="${!sessionScope.loggedIn }">
 			<ul class="nav navbar-nav">
 				<li><a href="#">Home</a>
 				<li><a href="login">Login</a></li>
 				<li><a href="register">Register</a></li>
 				<li><a href="aboutus">About Us</a></li>
 				<li><a href="contactus">Contact Us</a></li>
-				<li><a href="category">Manage Category</a></li>
-				<li><a href="supplier">Manage Supplier</a></li>
-				<li><a href="product">Manage Product</a></li>
-				<li><a href="productCatalog">Product Catalog</a></li>
 			</ul>
+			</c:if>
+			<c:if test="${sessionScope.loggedIn }">
+				<c:if test="${sessionScope.role=='ROLE_ADMIN' }">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Home</a>
+						<li><a href="category">Manage Category</a></li>
+						<li><a href="supplier">Manage Supplier</a></li>
+						<li><a href="product">Manage Product</a></li>
+					</ul>
+				</c:if>
+				<c:if test="${sessionScope.role=='ROLE_USER' }">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Home</a>
+						<li><a href="productCatalog">Product Catalog</a></li>
+					</ul>
+				</c:if>
+			</c:if>
+			
+			<div class="nav navbar-nav navbar-right">
+				<c:if test="${sessionScope.loggedIn }">
+					<font color="white">Welcome ${sessionScope.username } !<br>
+					<a href="perform_logout">Logout</a></font>
+				</c:if>
+			</div>
 </div>
 </nav>
 </div>

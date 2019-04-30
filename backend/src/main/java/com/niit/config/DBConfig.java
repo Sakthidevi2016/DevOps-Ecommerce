@@ -18,6 +18,7 @@ import com.niit.dao.CategoryDAOImplementation;
 import com.niit.dao.ProductDAOImplementation;
 import com.niit.dao.SupplierDAOImplementation;
 import com.niit.dao.UserDAOImplementation;
+import com.niit.model.CartItem;
 import com.niit.model.Category;
 import com.niit.model.Product;
 import com.niit.model.Supplier;
@@ -52,6 +53,7 @@ public class DBConfig {
 		localsession.addAnnotatedClass(Supplier.class);
 		localsession.addAnnotatedClass(Product.class);
 		localsession.addAnnotatedClass(User.class);
+		localsession.addAnnotatedClass(CartItem.class);
 		
 		SessionFactory sessionfactory = localsession.buildSessionFactory();
 		return sessionfactory;
