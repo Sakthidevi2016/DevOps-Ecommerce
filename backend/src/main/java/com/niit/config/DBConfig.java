@@ -20,6 +20,7 @@ import com.niit.dao.SupplierDAOImplementation;
 import com.niit.dao.UserDAOImplementation;
 import com.niit.model.CartItem;
 import com.niit.model.Category;
+import com.niit.model.OrderDetail;
 import com.niit.model.Product;
 import com.niit.model.Supplier;
 import com.niit.model.User;
@@ -54,6 +55,7 @@ public class DBConfig {
 		localsession.addAnnotatedClass(Product.class);
 		localsession.addAnnotatedClass(User.class);
 		localsession.addAnnotatedClass(CartItem.class);
+		localsession.addAnnotatedClass(OrderDetail.class);
 		
 		SessionFactory sessionfactory = localsession.buildSessionFactory();
 		return sessionfactory;

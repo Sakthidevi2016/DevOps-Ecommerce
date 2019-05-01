@@ -9,6 +9,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<style>
+body{
+background-image: url("http://www.geckomassage.com/wp-content/uploads/2015/01/plain-light-color-for-guest-background.jpg");
+background-size:100%;
+}
+</style>
 <body>
 <div class="container">
 	<nav class="navbar navbar-inverse">
@@ -37,7 +43,8 @@
 				<c:if test="${sessionScope.role=='ROLE_USER' }">
 					<ul class="nav navbar-nav">
 						<li><a href="#">Home</a>
-						<li><a href="productCatalog">Product Catalog</a></li>
+						<li><a href="<c:url value="/productCatalog"/>">Product Catalog</a></li>
+						<li><a href="<c:url value="/cart"/>">Cart</li>
 					</ul>
 				</c:if>
 			</c:if>

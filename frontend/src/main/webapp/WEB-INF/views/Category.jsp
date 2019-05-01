@@ -1,7 +1,7 @@
 <%@include file="Header.jsp"%>
 <html>
 <body>
-<h2>Welcome to Category Page!</h2>
+<h2><center>Welcome to Category Page!</center></h2>
 <form action="addCategory" method="post">
 
 	<table align="center" class="table-bordered">

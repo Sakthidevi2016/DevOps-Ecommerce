@@ -2,6 +2,7 @@
 <html>
 <head></head>
 <body>
-Welcome to contact us page!
+<h2><center>Welcome to contact us page!</center></h2>
 </body>
+<%@include file="Footer.jsp"%>
 </html>

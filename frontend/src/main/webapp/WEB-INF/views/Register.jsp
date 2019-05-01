@@ -1,7 +1,7 @@
 <%@include file="Header.jsp"%>
 <html>
-<head></head>
-<body>
-Welcome to register page!
+<body><h2 align = "center">Welcome to register page!</h2>
+
 </body>
+<%@include file="Footer.jsp"%>
 </html>

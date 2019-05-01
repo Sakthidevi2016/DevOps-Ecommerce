@@ -4,4 +4,5 @@
 <body>
 <h2><center>Welcome to Admin Login!</center></h2>
 </body>
+<%@include file="Footer.jsp"%>
 </html>

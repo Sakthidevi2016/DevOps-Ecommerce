@@ -12,7 +12,7 @@
 		<td><form:input path="productName"/></td>
 	</tr>
 	
-	<tr bgcolor="pink">
+	<tr>
 		<td>Price</td>
 		<td><form:input path="price"/></td>
 	</tr>
@@ -22,7 +22,7 @@
 		<td><form:input path="quantity"/></td>
 	</tr>
 	
-	<tr bgcolor="pink">
+	<tr>
 		<td>Category</td>
 		<td><form:select path="categoryID">
 				<form:option value="0" label="--Select List--"/>
@@ -40,7 +40,7 @@
 		</td>
 	</tr>
 	
-	<tr bgcolor="pink">
+	<tr>
 		<td>Product Description</td>
 		<td><form:input path="productDesc"/></td>
 	</tr>
@@ -147,3 +147,4 @@
 		</tr>
 	</c:forEach>
 </table>
+<%@include file="Footer.jsp"%>

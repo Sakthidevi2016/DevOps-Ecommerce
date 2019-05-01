@@ -3,10 +3,10 @@
 
 <form action="perform_login" method="post">
 <table align="center">
-	<%-- <tr>
+	<tr>
 		<td colspan ="2" ><center><b>${errorInfo}</b></center></td>
 		
-	</tr> --%>
+	</tr>
 	<tr>
 		<td colspan ="2" align = "center">Login</td>
 		
@@ -24,3 +24,4 @@
 	</tr>
 </table>
 </form>
+<%@include file="Footer.jsp"%>

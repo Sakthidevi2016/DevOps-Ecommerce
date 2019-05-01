@@ -38,7 +38,7 @@
 		<form action = "<c:url value="/addToCart/${productInfo.productID }"/>" method="get">
 			<tr>
 				<td>Quantity</td>
-				<td><input type="text" name="quantity"/></td>
+				<td><input type="text" name="quantity" required/></td>
 			</tr>
 			<tr>
 				<td><input type="submit" value="Add To Cart" class="btn btn-info"/></td>
@@ -46,3 +46,4 @@
 		</form>
 	</table>
 </div>
+<%@include file="Footer.jsp"%>
