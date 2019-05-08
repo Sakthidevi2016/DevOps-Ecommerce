@@ -2,7 +2,7 @@
 <html>
 <head></head>
 <body>
-<h2><center>Welcome to User Login!</center></h2>
+<h2><center>Welcome ${sessionScope.username } !</center></h2>
 </body>
 <%@include file="Footer.jsp"%>
 </html>

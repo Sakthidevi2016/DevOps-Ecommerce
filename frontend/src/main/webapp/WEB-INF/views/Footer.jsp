@@ -36,7 +36,7 @@ color:black;
 <div class="col-md-4">
 <h4><span class="glyphicon glyphicon-pencil "></span><a href="https://twitter.com/login"> Twitter</a></h4>
 <h4><span class="glyphicon glyphicon-pencil "></span><a href="https://en-gb.facebook.com/login/"> Facebook</a></h4>
-<h4><a href="#"><span class="glyphicon glyphicon-copyright-mark"></span></a>copyright2017.com</h4>
+<h4><a href="#"><span class="glyphicon glyphicon-copyright-mark"></span></a> copyright2017.com</h4>
 </div>
 </div>
 </div>

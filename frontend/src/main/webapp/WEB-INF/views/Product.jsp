@@ -9,17 +9,17 @@
 	
 	<tr>
 		<td>Product Name</td>
-		<td><form:input path="productName"/></td>
+		<td><form:input path="productName" required title="mandate"/></td>
 	</tr>
 	
 	<tr>
 		<td>Price</td>
-		<td><form:input path="price"/></td>
+		<td><form:input path="price" required title="mandate"/></td>
 	</tr>
 	
 	<tr>
 		<td>Stock</td>
-		<td><form:input path="quantity"/></td>
+		<td><form:input path="quantity" required title="mandate"/></td>
 	</tr>
 	
 	<tr>
@@ -42,11 +42,11 @@
 	
 	<tr>
 		<td>Product Description</td>
-		<td><form:input path="productDesc"/></td>
+		<td><form:input path="productDesc" required title="mandate"/></td>
 	</tr>
 	<tr>
 		<td>Product Image</td>
-		<td><form:input type="file" path="productImage"/></td>
+		<td><form:input type="file" path="productImage" required title="insert an image"/></td>
 	</tr>
 	<tr>
 		<td colspan="2">

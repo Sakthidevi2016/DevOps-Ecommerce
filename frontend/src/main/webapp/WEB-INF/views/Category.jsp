@@ -10,11 +10,11 @@
 		</tr>
 		<tr>
 			<td>Category Name</td>
-			<td><input type="text" name="categoryName"/></td>
+			<td><input type="text" name="categoryName" required title="mandate"/></td>
 		</tr>
 		<tr>
 			<td>Category Desc</td>
-			<td><input type="text" name="categoryDesc"/></td>
+			<td><input type="text" name="categoryDesc" required title="mandate"/></td>
 		</tr>
 		<tr>
 			<td colspan="2">
