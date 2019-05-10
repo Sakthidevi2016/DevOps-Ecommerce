@@ -47,6 +47,7 @@ background-size:100%;
 						<li><a href="#"> Home</a>
 						<li><a href="<c:url value="/productCatalog"/>"> Product Catalog</a></li>
 						<li><a href="<c:url value="/cart"/>"> Cart</li>
+						
 					</ul>
 				</c:if>
 			</c:if>

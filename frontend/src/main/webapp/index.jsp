@@ -66,10 +66,45 @@
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+    
+   
       
 </div>
 </div>
 </div>
+<hr>
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="<c:url value="/login"/>">
+        <img src="<c:url value="/resources/images/81.jpg"/>" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p><h2>Blossom of tasty buds</h2></p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="<c:url value="/login"/>">
+        <img src="<c:url value="/resources/images/83.jpg"/>" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p><h2>Blossom of tasty buds</h2></p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="<c:url value="/login"/>">
+        <img src="<c:url value="/resources/images/84.jpg"/>" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p><h2>Blossom of tasty buds</h2></p>
+        </div>
+      </a>
+    </div>
+  </div>
+ </div>
 </body>
 <%@include file="/WEB-INF/views/Footer.jsp"%>
 </html>

@@ -31,7 +31,7 @@ color:black;
           <span class="glyphicon glyphicon-thumbs-up"></span> Like
         </a><br>
         
-      <h4><span class="glyphicon glyphicon-credit-card"></span><a href="#" > Pay by cards</a></h4>
+      <h4><span class="glyphicon glyphicon-credit-card"></span><a href="login" > Pay by cards</a></h4>
 </div>
 <div class="col-md-4">
 <h4><span class="glyphicon glyphicon-pencil "></span><a href="https://twitter.com/login"> Twitter</a></h4>

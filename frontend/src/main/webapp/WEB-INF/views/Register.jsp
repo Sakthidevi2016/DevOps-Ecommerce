@@ -32,7 +32,8 @@
 			    		
 			    		<div style="margin-bottom: 25px" class="input-group">
     						<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-    						<input id="phone" type="text" class="form-control" name="mobileNo" value="" placeholder="phone number" required>
+    						<input id="phone" type="text" class="form-control" name="mobileNo" value="" placeholder="phone number" 
+    						pattern="[0-9]{10}" title="phone number must in 10 digit"required>
 			    		</div>
 			    		
 			    		<div style="margin-top:10px" class="form-group" align="center">

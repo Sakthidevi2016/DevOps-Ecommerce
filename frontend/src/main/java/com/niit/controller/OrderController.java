@@ -49,7 +49,7 @@ public class OrderController
 		
 		orderDAO.insertOrderDetail(orderDetail);
 		
-		return "ThankYou";
+		return "Shipping";
 		
 	}
 	

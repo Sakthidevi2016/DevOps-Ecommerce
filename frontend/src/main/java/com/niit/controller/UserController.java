@@ -64,7 +64,7 @@ public class UserController {
 		session.invalidate();
 		m.addAttribute("errorInfo", "Logout successfully!");
 		
-		return "Login";
+		return "Home";
 	}
 
 	
@@ -87,7 +87,7 @@ public class UserController {
 		List<User> listUser = userDAO.listUser();
 		m.addAttribute("userList", listUser);
 		
-		return "Register";
+		return "Login";
 		
 	}
 	

@@ -2,7 +2,7 @@
 <html>
 <head></head>
 <body>
-<h2><center>Welcome to about us page!</center></h2>
+<h2><center>About us</center></h2>
 <p>Our site is one of the most popular for ordering food in online.Enjoy your food by ordering food from favourite restaurants near you. We start online delivery 
 for the below cities</p>
 <ul>
