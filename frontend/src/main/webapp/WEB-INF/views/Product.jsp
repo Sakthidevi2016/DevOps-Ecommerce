@@ -1,65 +1,6 @@
 <%@include file="Header.jsp"%>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<%-- <c:if test="${flag }"> --%>
 <form:form action="addProduct" modelAttribute="product" method="post" enctype="multipart/form-data"> 
-<table align ="center">
-	<tr>
-		<td colspan="2">Product Detail</td>
-	</tr>
-	
-	<tr>
-		<td>Product Name</td>
-		<td><form:input path="productName" required title="mandate"/></td>
-	</tr>
-	
-	<tr>
-		<td>Price</td>
-		<td><form:input path="price" required title="mandate"/></td>
-	</tr>
-	
-	<tr>
-		<td>Stock</td>
-		<td><form:input path="quantity" required title="mandate"/></td>
-	</tr>
-	
-	<tr>
-		<td>Category</td>
-		<td><form:select path="categoryID">
-				<form:option value="0" label="--Select List--"/>
-				<form:options items="${categoryList }" />
-			</form:select>
-		</td>
-	</tr>
-	
-	<tr>
-		<td>Supplier</td>
-		<td><form:select path="supplierID">
-				<form:option value="0" label="--Select List--"/>
-				<form:options items="${supplierList }"/>
-		</form:select>
-		</td>
-	</tr>
-	
-	<tr>
-		<td>Product Description</td>
-		<td><form:input path="productDesc" required title="mandate"/></td>
-	</tr>
-	<tr>
-		<td>Product Image</td>
-		<td><form:input type="file" path="productImage" required title="insert an image"/></td>
-	</tr>
-	<tr>
-		<td colspan="2">
-			<center>
-				<input type="submit" value="Insert"/>
-			</center>
-		</td>
-	</tr>
-</table>
-</form:form>
-<%-- </c:if> --%>
-<%-- <c:if test="${flag}">
-<form:form action="updateProduct" modelAttribute="product" method="post"> 
 <table align ="center">
 	<tr>
 		<td colspan="2">Product Detail</td>
@@ -70,7 +11,7 @@
 		<td><form:input path="productName"/></td>
 	</tr>
 	
-	<tr bgcolor="pink">
+	<tr>
 		<td>Price</td>
 		<td><form:input path="price"/></td>
 	</tr>
@@ -80,7 +21,7 @@
 		<td><form:input path="quantity"/></td>
 	</tr>
 	
-	<tr bgcolor="pink">
+	<tr>
 		<td>Category</td>
 		<td><form:select path="categoryID">
 				<form:option value="0" label="--Select List--"/>
@@ -98,16 +39,14 @@
 		</td>
 	</tr>
 	
-	<tr bgcolor="pink">
+	<tr>
 		<td>Product Description</td>
 		<td><form:input path="productDesc"/></td>
 	</tr>
-	
 	<tr>
 		<td>Product Image</td>
-		<td><form:input type="file" path="pimage"/></td>
+		<td><form:input type="file" path="productImage"/></td>
 	</tr>
-	
 	<tr>
 		<td colspan="2">
 			<center>
@@ -117,8 +56,7 @@
 	</tr>
 </table>
 </form:form>
-</c:if>
- --%>
+
  <table align="center" class="table">
 	<tr>
 		<td colspan = "9"><center>Product Detail</center></td>

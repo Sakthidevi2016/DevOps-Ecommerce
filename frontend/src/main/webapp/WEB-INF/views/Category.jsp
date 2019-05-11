@@ -4,25 +4,47 @@
 <h2><center>Welcome to Category Page!</center></h2>
 <form action="addCategory" method="post">
 
-	<table align="center" class="table-bordered">
-		<tr>
-			<td colspan ="2">Category Detail</td>
-		</tr>
-		<tr>
-			<td>Category Name</td>
-			<td><input type="text" name="categoryName" required/></td>
-		</tr>
-		<tr>
-			<td>Category Desc</td>
-			<td><input type="text" name="categoryDesc" required/></td>
-		</tr>
-		<tr>
-			<td colspan="2">
-			<input type="submit" value="Enter Category"/></td>
-		</tr>
-	</table>
+	<div class="container">    
+        <div id="categoryform" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title" align="center"><b>Category Detail</div>
+
+                    </div>
+                    
+                    <div style="padding-top:30px" class="panel-body" >
+
+                        
+                        <form id="categoryform" class="form-horizontal" role="form">
+                                    
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon">Category Name</span>
+                                        <input id="categoryname" type="text" class="form-control" name="categoryName" value="" placeholder="" required>
+                                                                           
+                            </div>
+                            
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon">Category Desc</span>
+                                        <input id="categorydesc" type="text" class="form-control" name="categoryDesc" value="" placeholder="" required>
+                                                                           
+                            </div>
+                            
+                            <div style="margin-top:10px" class="form-group" align="center">
+                                    <!-- Button -->
+
+                                    <div class="col-sm-12 controls">
+                                      <input type="submit" class="btn btn-success" value="Submit">
+                                      <input type="reset" class="btn btn-success" value="Reset">
+                                    </div>
+                                </div>
 </form>
-<table align="center" class="table table-dark table-striped">
+</div>
+</div>
+</div>
+</div>
+</form>
+<div class="container">
+<table align="center" class="table table-dark table-striped" class="table table-bordered">
 	<tr>
 		<td colspan = "5"><center>Category Detail</center></td>
 	</tr>
@@ -45,5 +67,6 @@
 		</tr>
 	</c:forEach>
 </table>
+</div>
 </body>
 </html>

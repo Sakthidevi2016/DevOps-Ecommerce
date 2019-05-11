@@ -74,36 +74,118 @@
 </div>
 <hr>
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-3">
     <div class="thumbnail">
       <a href="<c:url value="/login"/>">
         <img src="<c:url value="/resources/images/81.jpg"/>" alt="Lights" style="width:100%">
         <div class="caption">
-          <p><h2>Blossom of tasty buds</h2></p>
+          <p><h2>Chicken Briyani</h2>
+          Order it now!</p>
         </div>
       </a>
     </div>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-3">
     <div class="thumbnail">
       <a href="<c:url value="/login"/>">
         <img src="<c:url value="/resources/images/83.jpg"/>" alt="Lights" style="width:100%">
         <div class="caption">
-          <p><h2>Blossom of tasty buds</h2></p>
+          <p><h2>Egg Briyani</h2>
+          Order it now!</p>
         </div>
       </a>
     </div>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-3">
     <div class="thumbnail">
       <a href="<c:url value="/login"/>">
         <img src="<c:url value="/resources/images/84.jpg"/>" alt="Lights" style="width:100%">
         <div class="caption">
-          <p><h2>Blossom of tasty buds</h2></p>
+          <p><h2>Mutton Briyani</h2>
+          Order it now!</p>
         </div>
       </a>
     </div>
   </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="<c:url value="/login"/>">
+        <img src="<c:url value="/resources/images/86.jpg"/>" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p><h2>Parrotta</h2>
+          Order it now!</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="<c:url value="/login"/>">
+        <img src="<c:url value="/resources/images/87.jpg"/>" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p><h2>Non Veg Meals</h2>
+          Order it now!</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="<c:url value="/login"/>">
+        <img src="<c:url value="/resources/images/89.jpg"/>" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p><h2>Veg Meals</h2>
+          Order it now!</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="<c:url value="/login"/>">
+        <img src="<c:url value="/resources/images/188.jpg"/>" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p><h2>Milkshake</h2>
+          
+          Order it now!</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="<c:url value="/login"/>">
+        <img src="<c:url value="/resources/images/190.jpg"/>" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p><h2>Cake</h2>
+          Order it now!</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="<c:url value="/login"/>">
+        <img src="<c:url value="/resources/images/191.jpg"/>" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p><h2>Pizza</h2>
+          Order it now!</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="<c:url value="/login"/>">
+        <img src="<c:url value="/resources/images/192.jpg"/>" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p><h2>Burger</h2>
+          Order it now!</p>
+        </div>
+      </a>
+    </div>
+  </div>
+ </div>
  </div>
 </body>
 <%@include file="/WEB-INF/views/Footer.jsp"%>
